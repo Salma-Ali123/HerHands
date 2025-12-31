@@ -186,7 +186,7 @@ function initializeSampleData() {
                 description: "Beautiful handmade ceramic mugs with unique glaze patterns. Each mug is one-of-a-kind.",
                 stock: 15,
                 tags: ["ceramic", "mug", "handmade", "home"],
-                images: ["../images/photo-1544787219-7f47ccb76574.jfif"],
+                images: ["photo-1544787219-7f47ccb76574.jfif"],
                 rating: 4.8,
                 createdAt: new Date().toISOString()
             },
@@ -200,7 +200,7 @@ function initializeSampleData() {
                 description: "Handcrafted soap bars made with organic lavender essential oil and natural ingredients.",
                 stock: 30,
                 tags: ["soap", "organic", "lavender", "natural"],
-                images: ["../images/skincare-7.jpg"],
+                images: ["images/skincare-7.jpg"],
                 rating: 4.9,
                 createdAt: new Date().toISOString()
             },
@@ -214,7 +214,7 @@ function initializeSampleData() {
                 description: "Soft cotton scarf handwoven with traditional techniques. Perfect for any season.",
                 stock: 20,
                 tags: ["scarf", "cotton", "handwoven", "fashion"],
-                images: ["../images/photo-1591047139829-d91aecb6caea.jfif"],
+                images: ["photo-1591047139829-d91aecb6caea.jfif"],
                 rating: 4.7,
                 createdAt: new Date().toISOString()
             },
@@ -228,7 +228,7 @@ function initializeSampleData() {
                 description: "Delicious strawberry jam made with fresh organic strawberries and natural sweeteners.",
                 stock: 25,
                 tags: ["jam", "strawberry", "homemade", "food"],
-                images: ["../images/food-8.jpg"],
+                images: ["food-8.jpg"],
                 rating: 4.9,
                 createdAt: new Date().toISOString()
             },
@@ -242,7 +242,7 @@ function initializeSampleData() {
                 description: "Custom necklace with genuine birthstone. Perfect personalized gift.",
                 stock: 10,
                 tags: ["necklace", "jewelry", "personalized", "birthstone"],
-                images: ["../images/accessories-2.jpg"],
+                images: ["accessories-2.jpg"],
                 rating: 4.9,
                 createdAt: new Date().toISOString()
             },
@@ -256,7 +256,7 @@ function initializeSampleData() {
                 description: "Natural soy candles with relaxing scents. Burn time 40+ hours each.",
                 stock: 18,
                 tags: ["candle", "soy", "scented", "home"],
-                images: ["../images/skincare-2.jpg"],
+                images: ["skincare-2.jpg"],
                 rating: 4.8,
                 createdAt: new Date().toISOString()
             }
@@ -325,7 +325,7 @@ function populateProducts() {
         productCard.className = 'product-card';
         productCard.innerHTML = `
                     <div class="product-image">
-                        <img src="${firstImage}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="./assets/images/${firstImage}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">
                         ${product.stock < 5 ? `<span class="product-badge">Low Stock</span>` : ''}
                     </div>
                     <div class="product-info">
